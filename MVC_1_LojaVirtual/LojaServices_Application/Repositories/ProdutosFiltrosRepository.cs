@@ -43,7 +43,7 @@ namespace LojaServices_Application.Repositories
             return db.Produtos.OrderBy(x => x.QtdProduto).ToListAsync();
         }
 
-        public async Task<ProdutosComCategoria_View?> GetProdutosByVIEW(int id)//Os produtos possuiram imagens
+        public async Task<ProdutosComCategoria_View?> GetProdutosByVIEW(int id)//Os produtos possuirão imagens
         {
 
             return await db.ProdutosCategoria_View.Where(x => x.idProdutos == id).FirstOrDefaultAsync();
