@@ -1,0 +1,132 @@
+﻿@model List<Infra.Data.Domain.Models.Produtos>
+
+
+
+
+<br>
+<div class=" text-center text-dark">
+    <h1 class="display-4 text-black">Lista de Produtos</h1>
+   <br>
+</div>
+
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="d-flex" asp-action="GetProdutos" asp-controller="Produtos">
+                <input name="NameProduct" class="form-cont me-1" type="search" placeholder="buscar por:" 
+                arial-label="Digite o que deseja buscar" />
+                <button class="btn btn-dark" type="submit">Buscar</button>
+            </form>
+        </div>  
+    </div>
+</div>
+    
+<br />
+
+<div class="row">
+    <div class=" col-12-sm">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">
+                        <a asp-action="GetProdutos" asp-route-sortString="@ViewData["NameSortParam"]">
+                            <span class="glyphicon glyphicon-sort">Nome</span>
+                        </a>
+                    </th>
+                    <th scope="col">
+                        <a asp-action="GetProdutos" asp-route-sortString="@ViewData["PriceSortParam"]">
+                            <span class="glyphicon glyphicon-sort">Preço</span>
+                        </a>
+                    </th>
+                    <th scope="col">
+                        <a asp-action="GetProdutos" asp-route-sortString="@ViewData["StockSortParam"]">
+                            <span class="glyphicon glyphicon-sort">Qtd.Estoque</span>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <th scope="row">@item.Id</th>
+                            <td>@item.Name</td>
+                            <td>@item.ValorDoProduto</td>
+                            <td>@item.QtdProduto</td>
+                            <td>
+                                <div class="col-md-6">
+                                    <a asp-action="GetProdutosDetalhado" asp-route-ProdutoId="@item.Id" class="text-dark ">Detalhes</a>
+                                </div>
+                              
+                            </td>
+                           
+                        </tr>
+                        
+                    }
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<br />
+<div class="col-md-6">
+    <a asp-action="GetProdutos" class="text-dark">Retornar a listagem completa</a>
+</div>
+
+
+@* <script>
+        $(() => {
+            getItems();
+
+            $('#Buscar1').on('Keyup', () => {
+                getItems();
+            });
+        });
+        function getItems()
+        {
+            $.ajax({
+                url: '@Url.Action("SearchProdutos", "Produtos")',
+                dataType: 'html',
+                method: 'Get',
+                data: { Buscador: $('#Buscar1').val() },
+                sucess: function (res) {
+                    $('#Produtos1').html('').html(res);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        }
+    </script> *@
+
+
+    @*    <div class="input-group-sm">
+    <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+    <option selected>Selecione o filtro</option>
+    <option value="1">Ordem Alfabetica</option>
+    <option value="2">Preço</option>
+    <option value="3">Qtd estoque</option>
+    </select>
+    <span class="input-group-sm">
+    <button type="submit" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Filtrar</button>
+    </span>
+    </div> Tentei fazer desta forma*@
+
+
+    @* <div class="form-inline pull-right">
+    <form class="d-flex" asp-action="GetProdutos" asp-controller="Produtos">
+    <input name="NameProdcut" type="text" class="form-control" placeholder=" Digite o nome do que deseja buscar "
+    arial-label="Digite o nome do que deseja buscar " />
+    <button type="submit" class="btn btn-dark btn-sm"></button>
+    </form>
+
+    </div>
+    <div class="col-md-6">
+    <a asp-action="GetProdutos" class="text-dark">Retornar a listagem completa</a>
+    </div>
+    </div> *@

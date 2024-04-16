@@ -1,0 +1,31 @@
+﻿    @model Infra.Data.Domain.Dtos.UsuarioDto
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<form asp-controller="home" asp-action="SignUp" method="post">
+    <div class="mb-3">
+        <label for="Name1" class="form-label">Nome do usuario</label>
+        <input type="text" asp-for="NomeUsuario" class="form-control" id="Name1" placeholder="Digite um nome Adequado.">
+        @Html.ValidationMessageFor(x=> x.NomeUsuario)
+    </div>
+    <div class="mb-3">
+        <label for="Email1" class="form-label">Email Do Usuario</label>
+      <input type="text-" asp-for="EmailUsuario" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Digite um E-mail adequado.">
+       <div id="emailHelp" class="form-text" >Nunca compartilharemos seu E-mail com terceiros.</div>
+       @Html.ValidationMessageFor(X=> X.EmailUsuario)
+    </div>
+    <div class="mb-3">
+        <label for="Password1" class="form-label">Senha do usuario</label>
+        <input type="password" asp-for="Password" class="form-control" id="Password1" placeholder="Digite uma senha adequada.">
+        @Html.ValidationMessageFor(x=> x.Password)
+    </div>
+    <button type="submit" class="btn btn-primary">Registro</button>
+</form>
+
+
+<p>Realize seu cadastro de usuario e desfrute de diversos beneficios.</p>
+

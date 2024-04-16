@@ -1,0 +1,15 @@
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\bin\Debug\net8.0\Infra.Data.Context.deps.json
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\bin\Debug\net8.0\Infra.Data.Context.dll
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\bin\Debug\net8.0\Infra.Data.Context.pdb
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\Infra.Data.Context.csproj.AssemblyReference.cache
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\Infra.Data.Context.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\Infra.Data.Context.AssemblyInfoInputs.cache
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\Infra.Data.Context.AssemblyInfo.cs
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\Infra.Data.Context.csproj.CoreCompileInputs.cache
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\Infra.Data.Context.dll
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\refint\Infra.Data.Context.dll
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\Infra.Data.Context.pdb
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\ref\Infra.Data.Context.dll
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\bin\Debug\net8.0\Infra.Data.Domain.dll
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\bin\Debug\net8.0\Infra.Data.Domain.pdb
+D:\Programas Visual Studio\API's\MVC\Infra.Data.Context\obj\Debug\net8.0\Infra.Data.Context.csproj.CopyComplete

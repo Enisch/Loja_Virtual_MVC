@@ -1,0 +1,42 @@
+﻿@model Infra.Data.Domain.Models.ProdutosComCategoria_View
+@{
+}
+
+ 
+<div class=" text-center text-dark">
+    <h1 class="display-4 text-black">Detalhes do Produto</h1>
+    <br>
+</div>
+<br />
+
+<h2 class="text-center text-dark">Imagem do Produto</h2>
+
+        <img class="text-alingn-center" src="@Model.Img" alt="ProductImage">
+
+
+
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Qtd.Estoque</th>
+            <th scope="col">Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+   <tr>
+           
+            <td>@Model.idProdutos</td>
+            <td>@Model.NomeProduto</td>
+            <td>@Model.ValorProduto</td>
+            <td>@Model.QtdProduto</td>
+            <td>@Model.NomeCategoria</td>
+        </tr> 
+    </tbody>
+</table>
+<br />
+<div class="col-md-6">
+    <a asp-action="GetProdutos" class="text-dark">Retornar a listagem anterior</a>
+</div>

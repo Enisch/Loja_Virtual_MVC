@@ -1,0 +1,29 @@
+﻿@model Infra.Data.Domain.Models.LogginUsuario
+@{
+    ViewData["Title"] = "Login";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+
+<form asp-controller="home" asp-action="Login" >
+    <div class="mb-3">
+        <label for="Email1" class="form-label">Email Do Usuario</label>
+        <input type="text-" asp-for="EmailUser" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="Digite seu E-mail de usuario">
+        <div id="emailHelp" class="form-text">Nunca compartilharemos seu E-mail com terceiros.</div>
+        @Html.ValidationMessageFor(X => X.EmailUser)
+    </div>
+
+    <div class="mb-3">
+        <label for="Password1" class="form-label">Senha do usuario</label>
+        <input type="password" asp-for="PasswordUser" class="form-control" id="Password1" placeholder="Digite sua senha de usuario">
+        @Html.ValidationMessageFor(x => x.PasswordUser)
+    </div>
+    <button type="submit" class="btn btn-primary">Logar</button>
+</form>
+
+
+
+<p>Efetue o Login para realizar compras em nosso dominio.</p>
+
+        @* //method="post" *@
